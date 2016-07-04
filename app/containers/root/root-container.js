@@ -13,15 +13,22 @@ var RootContainer = React.createClass({
             <html>
 
                 <head>
-                    <title>Hello World</title>
+
+                    <title>React Redux Boilerplate</title>
+                    <link rel="stylesheet" href="/css/application.css" />
+                    <meta charSet="utf-8" />
+                    <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+                    <meta httpEquiv="Pragma" content="no-cache" />
+                    <meta httpEquiv="Expires" content="-1" />
+                    <meta httpEquiv="Cache-Control" content="no-cache" />
+                    <meta name="viewport" content="width=device-width" />
+
                 </head>
 
                 <body>
 
                     <main>
-
                         {this.props.children}
-
                     </main>
 
                     <script>var __config = null;</script>

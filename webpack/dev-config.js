@@ -15,11 +15,9 @@ const config = {
             'react-dom',
             'history',
             'react-router',
-            'babel-core/polyfill.js',
             'redux',
             'react-redux',
             'redux-thunk',
-            'redux-logger',
             'lodash',
             'query-string'
         ]
@@ -49,15 +47,9 @@ const config = {
     module: {
         loaders: [
             {
-                include: /\.json$/, loaders: ["json-loader"]
-            },
-            {
                 test: /\.jsx?$/,
-                loaders: ['react-hot', 'babel?optional=runtime&stage=1'],
-                include: [
-                    path.resolve(__dirname, '../app')
-                ],
-                noParse: /babel\-core\/browser\-polyfill/
+                exclude: /node_modules/,
+                loader: 'babel-loader'
             },
             {
                 test: /traceur-runtime/,

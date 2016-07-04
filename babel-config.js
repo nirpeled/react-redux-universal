@@ -1,10 +1,9 @@
-require('babel/register')({
+require('babel-register');
 
-    stage: 1,
+require.extensions['.scss'] = () => {
+    return;
+};
 
-    only: [
-        'app',
-        'webpack/server.js'
-    ]
-
-});
+require.extensions['.css'] = () => {
+    return;
+};
