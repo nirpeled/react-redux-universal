@@ -1,0 +1,79 @@
+/*
+----------------------------------------------------
+FORMS
+----------------------------------------------------
+*/
+
+.inp {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: $text-size-medium;
+    line-height: 16px;
+    font-weight: 400;
+    color: $input-text-color;
+    border: 1px solid $input-border-color;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 6px;
+    box-sizing: border-box;
+
+    &.inp-large {
+        height: 60px;
+        padding: 20px;
+    }
+
+    &.inp-medium {
+        padding: 10px 20px;
+    }
+
+    &.inp-full-width {
+        width: 100%;
+    }
+
+    &.no-color {
+        color: $gray-dark;
+        border-color: $gray-light;
+    }
+
+    &.with-error {
+        border-color: $input-color-error;
+    }
+}
+
+p {
+
+    &.with-error {
+        color: $text-color-error;
+        font-weight: bold;
+    }
+
+}
+
+.split-into-two {
+
+    .btn {
+        width: calc(50% - 5px);
+        display: inline-block;
+
+        &:only-of-type {
+            width: calc(40% - 10px);
+            margin-left: 10px;
+        }
+
+        + .btn {
+            margin-left: 10px;
+        }
+    }
+
+    .inp {
+        width: calc(50% - 5px);
+        display: inline-block;
+
+        &:only-of-type {
+            width: 60%;
+        }
+
+        + .inp {
+            margin-left: 10px;
+        }
+    }
+}

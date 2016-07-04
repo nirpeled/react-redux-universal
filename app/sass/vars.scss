@@ -1,0 +1,93 @@
+/*
+----------------------------------------------------
+COLORS
+----------------------------------------------------
+*/
+
+$white:                         #ffffff !default;
+$black:                         #000000 !default;
+
+$gray:                          #A3A3A3 !default;
+$gray-light:                    #EFEFEF !default;
+$gray-dark:                     #4F4F4F !default;
+
+$green:                         #09c9aa !default;
+$green-dark:                    darken($green, 10%);
+
+$red:                           #C85B5B !default;
+$yellow:                        #FCF488 !default;
+
+$facebook:                      #3B5998 !default;
+$facebook-dark:                 darken($facebook, 10%);
+
+$google:                        #DC4E41 !default;
+$google-dark:                   darken($google, 10%);
+
+$twitter:                       #55ACEE !default;
+$twitter-dark:                  darken($twitter, 10%);
+
+$mailto:                        #EA4335 !default;
+$mailto-dark:                   darken($mailto, 10%);
+
+/*
+----------------------------------------------------
+ELEMENTS
+----------------------------------------------------
+*/
+
+$text-color-base:               $gray-dark;
+$text-color-hover:              $green;
+$text-color-link:               $green;
+$text-color-light:              $gray;
+$text-color-error:              $red;
+
+$bg-header:                     $green;
+$bg-body:                       $gray-light;
+$bg-user:                       #E8E8E8;
+$bg-potential-steps:            $gray-light;
+$bg-community:                  #F7F7F7;
+
+$border-color:                  $gray-light;
+$border-color-timeline:         #e1e1e1;
+
+$input-text-color:              $green;
+$input-border-color:            $green;
+$input-color-error:             $red;
+
+/*
+----------------------------------------------------
+SIZES
+----------------------------------------------------
+*/
+
+$text-size-small:               14px;
+$text-size-medium:              16px;
+$text-size-large:               20px;
+
+/*
+----------------------------------------------------
+LAYOUT
+----------------------------------------------------
+*/
+
+$page-max-width:                988px;
+
+/*
+----------------------------------------------------
+GRID SYSTEM
+----------------------------------------------------
+*/
+
+$grid-col-12:                   64px    !default;
+$grid-col-16:                   43px    !default;
+$grid-gutter:                   20px    !default;
+$grid-gutter-2x:                40px    !default;
+
+/*
+----------------------------------------------------
+RESPONSIVE BREAK POINTS
+----------------------------------------------------
+*/
+
+$break-point-small:             "screen and (max-width: 1024px)";
+$break-point-large:             "screen and (min-width: 1600px)";

@@ -1,0 +1,48 @@
+@function grid-width-16($n) {
+    @return ($n * ($grid_col_16 + $grid_gutter)) - $grid_gutter;
+}
+
+@function grid-width-12($n) {
+    @return ($n * ($grid_col_12 + $grid_gutter)) - $grid_gutter;
+}
+
+@mixin center-absolute() {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include translate(-50%, -50%);
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+    @if $inset {
+        box-shadow: inset $top $left $blur $color;
+    } @else {
+        box-shadow: $top $left $blur $color;
+    }
+}
+
+@mixin clearfix {
+    zoom: 1;
+
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin low-resolution {
+    @media #{$break-point-small} {
+        @content;
+    }
+}
+
+@mixin high-resolution {
+    @media #{$break-point-large} {
+        @content;
+    }
+}

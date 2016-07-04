@@ -1,0 +1,47 @@
+/*
+----------------------------------------------------
+TAGS
+----------------------------------------------------
+*/
+
+.tag {
+    background: $white;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 400;
+    color: $text-color-light;
+    border: 1px solid $gray-light;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    user-select: none;
+
+    + .tag {
+        margin-left: 5px;
+    }
+
+    &.tag-black {
+        background: $black;
+        color: $white;
+    }
+
+    &.tag-green {
+        background: $green;
+        color: $white;
+    }
+
+    &.round {
+        border-radius: 50%;
+    }
+
+    &.with-action {
+        cursor: pointer;
+
+        &:hover {
+            color: $white;
+            background-color: $green;
+        }
+    }
+}

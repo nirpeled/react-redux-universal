@@ -1,0 +1,52 @@
+/*
+-----------------------------------------------------
+ANIMATIONS
+-----------------------------------------------------
+*/
+
+.fadein-appear {
+    opacity: 0.01;
+    transition: opacity .5s ease;
+
+    &.fadein-appear-active {
+        opacity: 1;
+    }
+}
+
+.fadein-enter {
+    opacity: 0.01;
+    transition: opacity .5s ease;
+
+    &.fadein-enter-active {
+        opacity: 1;
+    }
+}
+
+.fadein-leave {
+    opacity: 1;
+    transition: opacity .5s ease;
+
+    &.fadein-leave-active {
+        opacity: 0.01;
+    }
+}
+
+.fadein-user-step-enter {
+    opacity: 0.01;
+    transition: opacity 2s ease;
+
+    &.fadein-user-step-enter-active {
+        opacity: 1;
+        animation: pulse 5s ease-out 1 1s;
+    }
+}
+
+.fadein-user-step-leave {
+    opacity: 1;
+    transition: opacity 250ms ease;
+
+    &.fadein-user-step-leave-active {
+        opacity: 0.01;
+    }
+}
+

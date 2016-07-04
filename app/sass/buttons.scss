@@ -1,0 +1,148 @@
+/*
+----------------------------------------------------
+BUTTONS
+----------------------------------------------------
+*/
+
+.btn {
+    background: transparent;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: $gray;
+    border: 1px solid $gray;
+    padding: 6px 12px;
+    margin: 5px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+    transition: background-color .5s ease;
+
+    + .btn {
+        margin-left: 5px;
+    }
+
+    &:hover {
+        color: $green;
+        border-color: $green;
+    }
+
+    &.btn-active {
+        color: $green;
+        border-color: $green;
+
+        &:hover {
+            background: $green;
+            color: $white;
+            border-color: $green;
+        }
+    }
+
+    &.btn-selected {
+        background: $green;
+        color: $white;
+        border-color: $green;
+
+        &:hover {
+            background: $green-dark;
+        }
+    }
+
+    /*
+    ----------------------------------------------------
+    SIZES
+    ----------------------------------------------------
+    */
+
+    &.btn-large {
+        font-size: 18px;
+        line-height: 22px;
+        padding: 10px 30px;
+        box-sizing: border-box;
+    }
+
+    &.btn-extra-large {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 200;
+        height: 60px;
+    }
+
+    &.btn-full-width {
+        width: 100%;
+    }
+
+    /*
+    ----------------------------------------------------
+    VARIATIONS
+    ----------------------------------------------------
+    */
+
+    &.btn-facebook {
+        background: $facebook;
+        color: $white;
+        border-color: $facebook;
+
+        &:hover {
+            background: $facebook-dark;
+        }
+    }
+
+    &.btn-google {
+        background: $google;
+        color: $white;
+        border-color: $google;
+
+        &:hover {
+            background: $google-dark;
+        }
+    }
+
+    &.btn-step {
+        box-sizing: border-box;
+        color: $white;
+        width: 230px;
+        height: 45px;
+        line-height: 45px;
+        font-size: $text-size-medium;
+        border-radius: 20px;
+        padding: 0 20px;
+    }
+
+    &.disabled {
+        background: $gray;
+        color: $white;
+        border-color: $gray-light;
+        cursor: default;
+
+        &:hover {
+            background: $gray;
+            border-color: $gray-light;
+            color: $white;
+        }
+    }
+
+    &.in-progress {
+
+        i {
+            animation: fa-spin 2s infinite linear;
+
+            &:before {
+                content: "\f110";
+            }
+        }
+    }
+
+
+    &.link {
+
+        color: $text-color-link;
+        text-decoration: none;
+        border: 0;
+        padding: inherit;
+        margin: inherit;
+        display:inline;
+    }
+}
