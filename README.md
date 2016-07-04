@@ -1,8 +1,23 @@
-React Redux Universal Boilerplate
+# React Redux Universal Boilerplate
 
-TODO:
+[![npm version](https://img.shields.io/npm/v/redux.svg?style=flat-square)]
 
-- Clean up code
-- Upgrade old npm packages
-- Add sass files
-- Add API service
+### Installation
+
+```
+npm install
+```
+
+### Running
+
+```
+npm run dev
+```
+
+### TODO
+
+* Clean up webpack config files and merge dev with prod files
+* Add API service (based on http.js)
+* Add basic layout and design
+* Clean up old code
+* Clean up old and/or unused npm packages
