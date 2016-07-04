@@ -1,6 +1,6 @@
 {
   "name": "react-redux-universal",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "index.js",
   "scripts": {
     "build": "webpack --debug -v --stats --progress --config ./webpack/prod-config.js",

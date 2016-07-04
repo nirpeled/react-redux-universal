@@ -1,6 +1,6 @@
 # React Redux Universal Boilerplate
 
-[![npm version](https://img.shields.io/npm/v/redux.svg?style=flat-square)]
+![version](https://img.shields.io/badge/version-0.1.1-green.svg)
 
 ### Installation
 
@@ -20,4 +20,7 @@ npm run dev
 * Add API service (based on http.js)
 * Add basic layout and design
 * Clean up old code
-* Clean up old and/or unused npm packages
+* Clean up unused npm packages
+* Add hot loader
+* Improve webpack build time
+* Fix webpack production mode
