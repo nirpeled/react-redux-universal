@@ -2,18 +2,18 @@ import _ from 'lodash';
 import React from 'react';
 import { Link } from 'react-router';
 import { connect } from 'react-redux';
-import iconsConstants from '../../constants/icons-constants.js';
+import helpers from '../../helpers/helpers.js';
 
 var Homepage = React.createClass({
 
     render: function () {
 
-        console.log('[Homepage] render');
-        
+        helpers.logger('[Homepage] render');
+
         return (
             <section className="box-row box-homepage">
                 <h1>Homepage</h1>
-                <Link to="login">Login</Link>
+                <Link to="login" className="btn btn-selected">Login</Link>
             </section>
         );
     }

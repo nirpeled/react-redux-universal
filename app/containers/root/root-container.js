@@ -1,7 +1,6 @@
 import _ from 'lodash';
 import React from 'react';
 import { connect } from 'react-redux';
-
 import styles from '../../styles.js';
 
 var RootContainer = React.createClass({
@@ -14,7 +13,7 @@ var RootContainer = React.createClass({
 
                 <head>
 
-                    <title>React Redux Boilerplate</title>
+                    <title>My App</title>
                     <link rel="stylesheet" href="/css/application.css" />
                     <meta charSet="utf-8" />
                     <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />

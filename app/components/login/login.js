@@ -1,16 +1,19 @@
 import _ from 'lodash';
-import React, {PropTypes} from 'react';
+import React from 'react';
+import { Link } from 'react-router';
 import { connect } from 'react-redux';
+import helpers from '../../helpers/helpers.js';
 
 var Login = React.createClass({
 
     render: function () {
 
-        console.log('[Login] render');
+        helpers.logger('[Login] render');
 
         return (
-            <section className="box-row box-homepage">
+            <section className="box-row box-login">
                 <h1>Login</h1>
+                <Link to="/" className="btn btn-selected">Homepage</Link>
             </section>
         );
     }
