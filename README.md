@@ -24,3 +24,4 @@ npm run dev
 * Add hot loader
 * Improve webpack build time
 * Fix webpack production mode
+* Add support for absolute paths (webpack)
