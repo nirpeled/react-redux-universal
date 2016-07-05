@@ -18,21 +18,16 @@ module.exports = {
             'react-dom',
             'history',
             'react-router',
-            'babel-core/polyfill.js',
             'redux',
             'react-redux',
             'redux-thunk',
-            'redux-logger',
             'lodash',
-            'query-string',
-            'swiper/dist/js/swiper.js',
-            'react-slick',
-            'react-slider'
+            'query-string'
         ]
     },
     output: {
         path: path.join(__dirname, '../dist'),
-        filename: 'bundle.js',
+        filename: 'application.js',
         publicPath: 'dist'
     },
     plugins: [

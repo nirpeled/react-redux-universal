@@ -1,15 +1,19 @@
 import _ from 'lodash';
-import React, {PropTypes} from 'react';
+import React from 'react';
+import { Link } from 'react-router';
 import { connect } from 'react-redux';
 import iconsConstants from '../../constants/icons-constants.js';
 
-var HomepageController = React.createClass({
+var Homepage = React.createClass({
 
     render: function () {
 
+        console.log('[Homepage] render');
+        
         return (
             <section className="box-row box-homepage">
-                <h1>Homepage <i className={iconsConstants.INFO} /></h1>
+                <h1>Homepage</h1>
+                <Link to="login">Login</Link>
             </section>
         );
     }
@@ -22,4 +26,4 @@ function mapStateToProps(state) {
     };
 }
 
-export default connect(mapStateToProps)(HomepageController);
+export default connect(mapStateToProps)(Homepage);

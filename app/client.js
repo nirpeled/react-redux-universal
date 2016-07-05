@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, match, useRouterHistory } from 'react-router';
-import { createHistory } from 'history';
+import { Router, match, browserHistory } from 'react-router';
 import queryString from 'query-string';
 import { Provider } from 'react-redux';
 import routes from './routes.js';
 import configService from './services/config.js';
 import storeService from './store/store.js';
 
-var history = useRouterHistory(createHistory)(),
+var history = browserHistory,
     store,
     dispatch,
     unlisten;
