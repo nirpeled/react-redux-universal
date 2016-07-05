@@ -1,2 +1,2 @@
-require('../babel-config');
-require('../webpack/server.js');
+require('babel-config.js');
+require('server.js');

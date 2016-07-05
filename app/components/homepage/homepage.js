@@ -13,6 +13,7 @@ var Homepage = React.createClass({
         return (
             <section className="box-row box-homepage">
                 <h1>Homepage</h1>
+                <p>Yep :)</p>
                 <Link to="login" className="btn btn-selected">Login</Link>
             </section>
         );

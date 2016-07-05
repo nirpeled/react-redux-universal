@@ -1,12 +1,10 @@
 {
   "name": "react-redux-universal",
   "version": "0.1.1",
-  "main": "index.js",
   "scripts": {
-    "build": "webpack --debug -v --stats --progress --config ./webpack/prod-config.js",
-    "start": "npm run build && env whipclip_env=production node bin/prod.js",
-    "dev": "env NODE_ENV=development node bin/dev.js",
-    "hot": "env NODE_ENV=development node bin/webpack-server.js"
+    "build": "webpack --debug -v --stats --progress --config ./bin/webpack-config.js",
+    "start": "npm run build && env environment=prod node bin/prod.js",
+    "dev": "env environment=dev node bin/dev.js"
   },
   "dependencies": {
     "autoprefixer-loader": "*",
