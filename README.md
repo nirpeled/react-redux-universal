@@ -1,6 +1,6 @@
 # React Redux Universal Boilerplate
 
-![version](https://img.shields.io/badge/version-0.1.1-green.svg)
+![version](https://img.shields.io/badge/version-0.2.0-green.svg)
 
 ### Installation
 
@@ -16,13 +16,9 @@ npm run dev
 
 ### TODO
 
-* Clean up webpack config files and merge dev with prod files
-* Add API service (based on http.js)
-* Add basic layout and design
-* Clean up old code
-* Clean up unused npm packages
-* Add hot loader
-* Improve webpack build time
-* Fix webpack production mode
-* Add support for absolute paths (webpack)
-* Fix react hot loader
+* Webpack - fix production mode
+* Webpack - add support for absolute paths
+* Webpack - improve build time
+* Components - add basic components like modal, select and others
+* Redux - add an example of a container with actions and a reducer
+* Misc - Clean up old code

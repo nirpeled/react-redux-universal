@@ -1,6 +1,6 @@
 {
   "name": "react-redux-universal",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "scripts": {
     "build": "webpack --debug -v --stats --progress --config ./bin/webpack-config.js",
     "start": "npm run build && env environment=prod node bin/prod.js",
