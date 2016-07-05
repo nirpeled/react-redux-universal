@@ -8,7 +8,7 @@ var HomepageController = React.createClass({
 
         return (
             <secion>
-                <h1>Hello World</h1>
+                <h1>Hello World 123</h1>
             </secion>
         );
     }

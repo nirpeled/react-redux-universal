@@ -6,7 +6,7 @@ const port = process.env.HOT_LOAD_PORT || 8889;
 const config = {
     entry: {
         app: [
-            'webpack-dev-server/client?http://localhost:' + port, // WebpackDevServer host and port
+            'webpack-dev-server/client?http://localhost:' + port,
             'webpack/hot/only-dev-server',
             './app/client.js'
         ],
@@ -49,7 +49,7 @@ const config = {
             {
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
-                loader: 'babel-loader'
+                loaders: ['react-hot', 'babel-loader']
             },
             {
                 test: /traceur-runtime/,
