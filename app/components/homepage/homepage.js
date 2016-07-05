@@ -1,15 +1,16 @@
 import _ from 'lodash';
 import React, {PropTypes} from 'react';
 import { connect } from 'react-redux';
+import iconsConstants from '../../constants/icons-constants.js';
 
 var HomepageController = React.createClass({
 
     render: function () {
 
         return (
-            <secion>
-                <h1>Hello World 123</h1>
-            </secion>
+            <section className="box-row box-homepage">
+                <h1>Homepage <i className={iconsConstants.INFO} /></h1>
+            </section>
         );
     }
 });
